@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Academy.E2EProject.Listeners"/>
+  </listeners>
+  <test parallel="tests" name="ValidateTitle(failed)">
+    <classes>
+      <class name="Academy.E2EProject.HomePage">
+        <methods>
+          <include name="StartUp"/>
+        </methods>
+      </class> <!-- Academy.E2EProject.HomePage -->
+      <class name="Academy.E2EProject.ValidateNavigationBar">
+        <methods>
+          <include name="StartUp"/>
+        </methods>
+      </class> <!-- Academy.E2EProject.ValidateNavigationBar -->
+      <class name="Academy.E2EProject.ValidateTitle">
+        <methods>
+          <include name="StartUp"/>
+          <include name="basePageNavigation"/>
+        </methods>
+      </class> <!-- Academy.E2EProject.ValidateTitle -->
+    </classes>
+  </test> <!-- ValidateTitle(failed) -->
+  <test parallel="tests" name="ValidateNavigationBar(failed)">
+    <classes>
+      <class name="Academy.E2EProject.HomePage">
+        <methods>
+          <include name="StartUp"/>
+        </methods>
+      </class> <!-- Academy.E2EProject.HomePage -->
+      <class name="Academy.E2EProject.ValidateNavigationBar">
+        <methods>
+          <include name="basePageNavigation"/>
+          <include name="StartUp"/>
+        </methods>
+      </class> <!-- Academy.E2EProject.ValidateNavigationBar -->
+      <class name="Academy.E2EProject.ValidateTitle">
+        <methods>
+          <include name="StartUp"/>
+        </methods>
+      </class> <!-- Academy.E2EProject.ValidateTitle -->
+    </classes>
+  </test> <!-- ValidateNavigationBar(failed) -->
+  <test parallel="tests" name="Validate HomePage(failed)">
+    <classes>
+      <class name="Academy.E2EProject.HomePage">
+        <methods>
+          <include name="StartUp"/>
+          <include name="basePageNavigation"/>
+        </methods>
+      </class> <!-- Academy.E2EProject.HomePage -->
+      <class name="Academy.E2EProject.ValidateNavigationBar">
+        <methods>
+          <include name="StartUp"/>
+        </methods>
+      </class> <!-- Academy.E2EProject.ValidateNavigationBar -->
+      <class name="Academy.E2EProject.ValidateTitle">
+        <methods>
+          <include name="StartUp"/>
+        </methods>
+      </class> <!-- Academy.E2EProject.ValidateTitle -->
+    </classes>
+  </test> <!-- Validate HomePage(failed) -->
+</suite> <!-- Failed suite [Suite] -->

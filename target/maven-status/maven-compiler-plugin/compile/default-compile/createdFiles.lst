@@ -1,0 +1,5 @@
+pageObject\ContactPage.class
+pageObject\PracticePage.class
+pageObject\LandingPage.class
+Resources\base.class
+pageObject\LoginPage.class

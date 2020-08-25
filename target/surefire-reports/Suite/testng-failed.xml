@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="Academy.E2EProject.Listeners"/>
+  </listeners>
+  <test parallel="tests" name="ValidateContactForm(failed)">
+    <classes>
+      <class name="Academy.E2EProject.ValidateContactForm">
+        <methods>
+          <include name="validateContact"/>
+          <include name="StartUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Academy.E2EProject.ValidateContactForm -->
+      <class name="Academy.E2EProject.HomePage">
+        <methods>
+          <include name="tearDown"/>
+          <include name="StartUp"/>
+        </methods>
+      </class> <!-- Academy.E2EProject.HomePage -->
+      <class name="Academy.E2EProject.ValidateNavigationBar">
+        <methods>
+          <include name="tearDown"/>
+          <include name="StartUp"/>
+        </methods>
+      </class> <!-- Academy.E2EProject.ValidateNavigationBar -->
+      <class name="Academy.E2EProject.ValidateTitle">
+        <methods>
+          <include name="tearDown"/>
+          <include name="StartUp"/>
+        </methods>
+      </class> <!-- Academy.E2EProject.ValidateTitle -->
+      <class name="Academy.E2EProject.ValidatePractice">
+        <methods>
+          <include name="tearDown"/>
+          <include name="StartUp"/>
+        </methods>
+      </class> <!-- Academy.E2EProject.ValidatePractice -->
+    </classes>
+  </test> <!-- ValidateContactForm(failed) -->
+</suite> <!-- Failed suite [Suite] -->
