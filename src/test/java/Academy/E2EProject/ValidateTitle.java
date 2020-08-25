@@ -32,6 +32,14 @@ public class ValidateTitle extends base{
 		log.info("Navigatation Bar is Displayed");
 	}
 	
+	@Test 
+	public void test1()
+	{
+		System.out.println(driver.getCurrentUrl());
+		System.out.println(driver.getPageSource());
+	}
+
+	
 	@AfterTest
 	public void tearDown()
 	{
